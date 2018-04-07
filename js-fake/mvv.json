@@ -1,0 +1,17 @@
+[
+    {
+        "icone": "fas fa-file-alt",
+        "titulo": "Missão",
+        "texto": "Ser reconhecida pelo mercado como uma Empresa onde se possa procurar a melhor solução de usinagem, ser parceiro no fornecimento de materiais essenciais para seu processo de fabricação."
+    },
+    {
+        "icone": "fas fa-chart-line",
+        "titulo": "Visão",
+        "texto": "Trabalhar em busca da excelência, buscando atender e solucionar as necessidades dos clientes."
+    },
+    {
+        "icone": "fas fa-star",
+        "titulo": "Valores",
+        "texto": "Nossos valores são: Fé em Deus, Honestidade, Lealdade e Ética."
+    }
+]

@@ -1,0 +1,123 @@
+<section class="sec__sobre">
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+        <div class="box" style="min-height: 500px;" *ngFor="let item of conteudo2">
+
+          <h4>{{ item.titulo }}</h4>
+
+          <p>
+              {{ item.texto }}
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 bg_coisa">
+
+
+      </div>
+    
+
+    </div>
+
+
+  </div>
+
+  
+
+</section>
+
+
+<section class="sobres">
+
+    <div class="container">
+
+
+        <div class="row">
+  
+            <div class="box-sobre col-md-4" *ngFor="let item of mvv">
+    
+                <i class="{{item.icone}}"></i>
+                
+                <h2> {{item.titulo}}</h2>
+                <p>
+                    {{item.texto}}
+                </p>
+    
+            </div>
+        </div>
+  
+    </div>
+
+</section>
+
+<section class="sec__servicos">
+
+  <div class="container">
+
+    <div class="row ">
+
+      <div class="col-12">
+
+        <div class="titulo">
+          <h2>O QUE
+            <span class="text-thm"> FAZEMOS</span>
+          </h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-12 col-md-6" *ngFor="let item of conteudo">
+
+        <div class="sombra">
+          
+          <h4>{{ item.titulo }}</h4>
+          <p>{{ item.texto }}
+          </p>
+        </div>
+
+      </div>
+
+
+
+
+      <!-- <div class="col-12 col-md-6">
+        <div class="sombra">
+          <h4> How to Solve a Simple Drain</h4>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+            eius
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="sombra">
+          <h4> How to Solve a Simple Drain</h4>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+            eius
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="sombra">
+          <h4> How to Solve a Simple Drain</h4>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+            eius
+          </p>
+        </div>
+      </div> -->
+
+    </div>
+
+  </div>
+
+</section>
