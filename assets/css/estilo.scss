@@ -131,10 +131,31 @@ section {
 
 
 
+.fornecemos {
+    text-align: center;
+    .titulo {
+        font-weight: bold;
+    }
+    .text-thm {
+        color: #303030;
+        font-weight: bold;
+    }
+    .titulo {
+        margin: 0 0 50px;
+    }
+}
+
+
+
 footer {
     background: #e6e6e6;
-    padding: 50px 0;
+    padding: 30px 0;
     text-align: center;
+    .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     p {
         color: rgb(56, 56, 56);
         margin: 0;
