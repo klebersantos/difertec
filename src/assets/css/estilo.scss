@@ -12,7 +12,7 @@ header {
     height: 100vh;
     align-items: center;
     display: flex !important;
-    background: url(/assets/img/banner.jpg) no-repeat;
+    background: url('../img/banner.jpg') no-repeat;
     .logo {
         display: flex;
         margin: 0 0 50px 0;
@@ -69,6 +69,9 @@ section {
         justify-content: center;
         flex-direction: column;
         padding: 10% 20%;
+        @media screen and (max-width:992px) {
+            padding: 10% 0%;
+        }
     }
     h2 {
         margin-top: 30px;
@@ -79,7 +82,7 @@ section {
     }
     .bg_coisa {
         background-color: #f3efef;
-        background-image: url(/assets/img/metal.jpg);
+        background-image: url('../img/metal.jpg');
         background-repeat: no-repeat;
         background-position: right center; 
         width: 100%;
@@ -155,12 +158,18 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width:992px) {
+            flex-direction: column;
+        }
     }
     p {
         color: rgb(56, 56, 56);
         margin: 0;
         text-transform: uppercase;
         font-size: 11px;
+        @media screen and (max-width:992px) {
+            margin-top: 20px;
+        }
     }
 }
 
