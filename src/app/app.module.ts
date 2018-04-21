@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import {InterceptorModule } from './interceptor.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    InterceptorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

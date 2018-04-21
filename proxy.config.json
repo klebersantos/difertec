@@ -1,0 +1,9 @@
+{
+  "/api/*": {
+  "target": "http://www.kleberdev.com/json/",
+  "secure": false,
+  "changeOrigin": true,
+  "logLevel": "debug",
+  "pathRewrite": {"^/proxy" : ""}
+  }
+}

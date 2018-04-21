@@ -8,44 +8,44 @@ h1, h2, h3, h4, h5, h6 {
     color: #01c000;
 }
 
-header {
-    height: 100vh;
-    align-items: center;
-    display: flex !important;
-    background: url('../img/banner.jpg') no-repeat;
-    .logo {
-        display: flex;
-        margin: 0 0 50px 0;
-        img {
-            max-width: 400px;
-            @media screen and (max-width:992px) {
-                max-width: 100%;
-            }
-        }
-    }
-}
 
-.fixo {
+header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #00C000;
+    background: #fff;
     z-index: 1;
     display: flex;
-    padding: 5px 0;
-    align-items: flex-end;
-    justify-content: flex-end;
-    a {
-        font-size: 13px;
-        background: transparent;
-        border: none;
-        color: #fff;
-        margin-right: 10px;
-        @media screen and (max-width:992px) {
-            span {
-                display: none;
+    padding: 20px 0;
+    justify-content: space-around;
+    .fixo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            font-size: 15px;
+            background: transparent;
+            border: none;
+            font-weight: 500;
+            color: #01c000;
+            margin-right: 10px;
+            @media screen and (max-width:992px) {
+                span {
+                    display: none;
+                }
             }
         }
+        .zap {
+            background: #01c000;
+            color: #fff;
+            &:hover {
+                background: #037403;
+            }
+        }
+    }   
+    
+    .logo {
+        max-width: 200px;
     }
 }
 
@@ -59,6 +59,22 @@ img {
 section {
     margin: 0 0 100px 0; 
 }
+
+
+.sec_banner {
+    height: 100vh;
+    align-items: center;
+    display: flex !important;
+    background: url('../img/banner.jpg') no-repeat;
+    margin-bottom: 0;
+    h2 {
+        font-size: 65px;
+        text-align: center;
+        margin: 0 20%;
+        text-shadow: 0 1px 1px #ffffff;
+    }
+}
+
 
 .sec__sobre {
     margin-bottom: 0;
@@ -121,7 +137,6 @@ section {
     }
 }
 
-
 .sombra {
     margin-bottom: 50px;
     box-shadow: 0 0px 5px #e0dfdf;
@@ -133,6 +148,12 @@ section {
 }
 
 
+.et_pb_image_wrap {
+    box-shadow: 0 0px 5px #e0dfdf;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 20px;
+}
 
 .fornecemos {
     text-align: center;

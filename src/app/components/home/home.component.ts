@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-home',
@@ -24,10 +25,13 @@ export class HomeComponent implements OnInit {
       this.conteudo = file;
       console.log(file);
     });
-    this.http.get('http://kleberdev.com/json/quem-somos.json').subscribe(file => {
-      this.conteudo2 = file;
-      console.log(file);
+    
+    this.http.get('http://kleberdev.com/json/quem-somos.json')
+      .subscribe(res => {
+      this.conteudo2 = res;
+      console.log(res);
     });
+   
     this.http.get('http://kleberdev.com/json/mvv.json').subscribe(file => {
       this.mvv = file;
       console.log(file);
