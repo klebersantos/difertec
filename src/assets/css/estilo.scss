@@ -46,6 +46,9 @@ header {
     
     .logo {
         max-width: 200px;
+        @media screen and (max-width: 992px) {
+            max-width: 150px;
+        }
     }
 }
 
@@ -72,6 +75,10 @@ section {
         text-align: center;
         margin: 0 20%;
         text-shadow: 0 1px 1px #ffffff;
+        @media screen and (max-width: 992px) {
+            font-size: 30px;
+            margin:  0 10%;
+        }
     }
 }
 
@@ -87,6 +94,7 @@ section {
         padding: 10% 20%;
         @media screen and (max-width:992px) {
             padding: 10% 0%;
+            text-align: center;
         }
     }
     h2 {
